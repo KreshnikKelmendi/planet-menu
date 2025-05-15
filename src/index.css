@@ -6,7 +6,7 @@ body{
 
 @font-face {
   font-family: 'Cherola';
-  src: url('../../public/fonts/Cherola-Regular.ttf');
+  src: url('/fonts/Cherola-Regular.ttf') format('truetype');
 }
 
 .font-cherola {

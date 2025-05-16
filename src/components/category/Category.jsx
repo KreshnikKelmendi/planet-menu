@@ -134,7 +134,7 @@ const Category = () => {
                   onClick={() => handleSubcategoryClick(subcategory)}
                   className="border-b border-[#1d2d12] py-6 hover:shadow-lg transition duration-300 flex flex-col items-start space-y-2 cursor-pointer relative"
                 >
-                  <h3 className="text-3xl lg:text-7xl font-bold font-cherola text-[#201E1F]">
+                  <h3 className="text-5xl lg:text-7xl font-bold font-cherola text-[#201E1F]">
                     {subcategory.name[i18n.language]}
                   </h3>
 
@@ -160,7 +160,7 @@ const Category = () => {
                   key={index}
                   className="border-b border-[#1d2d12] py-6 hover:shadow-lg transition duration-300 flex flex-col items-start space-y-2"
                 >
-                  <h3 className="text-3xl lg:text-7xl font-bold font-cherola text-[#201E1F]">
+                  <h3 className="text-5xl lg:text-7xl font-bold font-cherola text-[#201E1F]">
                     {item.name[i18n.language]}
                   </h3>
 

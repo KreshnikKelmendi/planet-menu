@@ -170,7 +170,7 @@ const Category = () => {
                     </p>
                   )}
 
-                  <span className="text-[#2e5c0d] font-bold font-cherola text-5xl lg:text-7xl mt-2">
+                  <span className="text-[#2e5c0d] font-medium font-cherola text-5xl lg:text-7xl mt-2">
                     {item.price[i18n.language]}
                   </span>
                 </div>

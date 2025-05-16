@@ -508,7 +508,7 @@ const categories = [
     subcategories: [
       {
         name: {
-          sq: "Fií me ajran",
+          sq: "Fli me ajran",
           en: "Baked beans with ayran"
         },
         description: {
@@ -522,8 +522,8 @@ const categories = [
       },
       {
         name: {
-          sq: "Pogaç e vogèl me saç",
-          en: "Small sač bread"
+          sq: "Pogaç e vogël me saç",
+          en: "Small sac bread"
         },
         description: {
           sq: "",
@@ -536,8 +536,8 @@ const categories = [
       },
       {
         name: {
-          sq: "Piře tě ndryshme me saç",
-          en: "Various pies with sač"
+          sq: "Pite të ndryshme me saç",
+          en: "Various pies with sac"
         },
         description: {
           sq: "",
@@ -564,7 +564,7 @@ const categories = [
       },
       {
         name: {
-          sq: "Long shtēpie",
+          sq: "Long shtëpie",
           en: "House bread"
         },
         description: {
@@ -578,7 +578,7 @@ const categories = [
       },
       {
         name: {
-          sq: "Bukê e hollê me mish bifteku",
+          sq: "Bukê e hollë me mish bifteku",
           en: "Thin bread with beef steak"
         },
         description: {

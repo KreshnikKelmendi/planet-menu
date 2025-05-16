@@ -1045,7 +1045,7 @@ const categories = [
   ,
   {
     title: {
-      sq: "Specialitet nga Skara",
+      sq: "Specialitetet nga Skara",
       en: "Grill Specialties"
     },
     svg: <GiBarbecue size={35} />,

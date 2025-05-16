@@ -1,23 +1,26 @@
-import { useState } from 'react'
-import './App.css'
-import React from 'react'
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Category from './components/category/Category';
 import Navbar from './components/header/Navbar'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import HomePage from './components/pages/HomePage'
-import Footer from './components/footer/Footer'
+import Footer from './components/footer/Footer';
+import MenuInHomePage from './components/category/MenuInHomePage';
+
 
 function App() {
   return (
-    <>
-      <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-        </Routes>
-        <Footer />
-      </BrowserRouter>
-    </>
-  )
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Category />} />
+        <Route path="/:categoryId" element={<Category />} />
+        <Route path="/:categoryId/:subcategoryId" element={<Category />} />
+      </Routes>
+      <div className='px-5 lg:px-10'>
+        <MenuInHomePage />
+      </div>
+      <Footer />
+    </Router>
+  );
 }
 
-export default App
+export default App;

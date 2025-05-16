@@ -9,7 +9,8 @@ const categories = [
       en: "Breakfast"
     },
     svg: <GiMeal size={35} />,
-    link: "/breakfast",
+    link: "/breakfast", // Shtoni këtë rresht
+    hasSubcategories: false, // Shtoni këtë rresht
     subcategories: [
       {
         name: {
@@ -1405,6 +1406,7 @@ const categories = [
   ,
   {
     title: {
+      id: 'pasta',
       sq: "Specialitete Furre",
       en: "Oven Specialties"
     },
@@ -1504,6 +1506,7 @@ const categories = [
       en: "Drinks"
     },
     svg: <GiGlassCelebration size={35} />,
+    link: "/drinks",
     hasSubcategories: true,
     subcategories: [
       {

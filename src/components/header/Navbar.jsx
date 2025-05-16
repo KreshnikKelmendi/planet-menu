@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="w-full  top-0 left-0 z-50  py-1">
+    <header className="w-full z-50  pt-10">
       <div className="container mx-auto lg:px-6 flex justify-center items-center">
         {/* Logo */}
         <Link to="/" className="z-50">

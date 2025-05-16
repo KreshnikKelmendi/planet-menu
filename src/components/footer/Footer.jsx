@@ -3,7 +3,7 @@ import { FaFacebook, FaInstagram, FaTiktok } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className="relative bg-[#1d2d12] text-white pt-16 pb-8 px-4 overflow-hidden rounded-lg">
+    <footer className="relative bg-[#1d2d12] text-white pt-16 pb-8 px-4 overflow-hidden">
       {/* Background overlay */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-footer bg-cover bg-center opacity-30"></div>

@@ -1,41 +1,64 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useParams, useNavigate, Routes, Route } from 'react-router-dom';
 import categories from './categories';
 import { FaExclamationCircle, FaExclamationTriangle } from 'react-icons/fa';
 
 const Category = () => {
   const { t, i18n } = useTranslation();
+  const { categoryId, subcategoryId } = useParams();
+  const navigate = useNavigate();
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [selectedSubcategory, setSelectedSubcategory] = useState(null);
-  const [currentView, setCurrentView] = useState('categories'); // 'categories', 'subcategories', 'items'
+  const [currentView, setCurrentView] = useState('categories');
+
+  // Sync state with URL params
+  useEffect(() => {
+    if (categoryId) {
+      const category = categories.find(cat => cat.link === `/${categoryId}`);
+      if (category) {
+        setSelectedCategory(category);
+        if (subcategoryId) {
+          const subcategory = category.subcategories.find(
+            sub => sub.name.en.toLowerCase().replace(/\s+/g, '-') === subcategoryId
+          );
+          if (subcategory) {
+            setSelectedSubcategory(subcategory);
+            setCurrentView('items');
+          } else {
+            setCurrentView('subcategories');
+          }
+        } else {
+          setCurrentView(category.hasSubcategories ? 'subcategories' : 'items');
+        }
+      }
+    } else {
+      setSelectedCategory(null);
+      setSelectedSubcategory(null);
+      setCurrentView('categories');
+    }
+  }, [categoryId, subcategoryId]);
 
   const handleCategoryClick = (category) => {
-    setSelectedCategory(category);
-    if (category.hasSubcategories) {
-      setCurrentView('subcategories');
-    } else {
-      setCurrentView('items');
-    }
+    navigate(category.link);
     window.scrollTo(0, 0);
   };
 
   const handleSubcategoryClick = (subcategory) => {
-    setSelectedSubcategory(subcategory);
-    setCurrentView('items');
+    const subcategorySlug = subcategory.name.en.toLowerCase().replace(/\s+/g, '-');
+    navigate(`${selectedCategory.link}/${subcategorySlug}`);
     window.scrollTo(0, 0);
   };
 
   const handleBackClick = () => {
     if (currentView === 'items') {
       if (selectedCategory.hasSubcategories) {
-        setCurrentView('subcategories');
+        navigate(selectedCategory.link);
       } else {
-        setCurrentView('categories');
-        setSelectedCategory(null);
+        navigate('/');
       }
     } else if (currentView === 'subcategories') {
-      setCurrentView('categories');
-      setSelectedCategory(null);
+      navigate('/');
     }
     window.scrollTo(0, 0);
   };
@@ -45,7 +68,7 @@ const Category = () => {
   };
 
   return (
-    <div className="overflow-hidden mt-9 lg:mt-16 flex flex-col items-center">
+    <div className="overflow-hidden mt-9 lg:mt-16 flex flex-col items-center px-5 lg:px-10">
       {/* Language switcher */}
       <div className="mb-4 flex items-center">
         <button
@@ -96,7 +119,7 @@ const Category = () => {
           </button>
 
           {/* Title */}
-          <h2 className="text-5xl font-bold font-cherola text-[#201E1F] mb-8">
+          <h2 className="text-5xl font-bold text-center font-cherola text-[#201E1F] mb-8 pt-8 lg:pt-0">
             {currentView === 'subcategories'
               ? selectedCategory.title[i18n.language]
               : selectedSubcategory?.name[i18n.language] || selectedCategory.title[i18n.language]}
@@ -104,12 +127,12 @@ const Category = () => {
 
           {/* Subcategories list */}
           {currentView === 'subcategories' ? (
-            <div className="grid grid-cols-1 gap-10">
+            <div className="grid grid-cols-1 gap-10 ">
               {selectedCategory.subcategories.map((subcategory, index) => (
                 <div
                   key={index}
                   onClick={() => handleSubcategoryClick(subcategory)}
-                  className="border-b border-[#1d2d12] p-6 hover:shadow-lg transition duration-300 flex flex-col items-start space-y-2 cursor-pointer relative"
+                  className="border-b border-[#1d2d12] py-6 hover:shadow-lg transition duration-300 flex flex-col items-start space-y-2 cursor-pointer relative"
                 >
                   <h3 className="text-3xl lg:text-7xl font-bold font-cherola text-[#201E1F]">
                     {subcategory.name[i18n.language]}
@@ -131,11 +154,11 @@ const Category = () => {
               ))}
             </div>
           ) : (
-            <div className="grid grid-cols-1 gap-10">
+            <div className="grid grid-cols-1 gap-10 ">
               {(selectedSubcategory?.items || selectedCategory.subcategories).map((item, index) => (
                 <div
                   key={index}
-                  className="border-b border-[#1d2d12] p-6 hover:shadow-lg transition duration-300 flex flex-col items-start space-y-2"
+                  className="border-b border-[#1d2d12] py-6 hover:shadow-lg transition duration-300 flex flex-col items-start space-y-2"
                 >
                   <h3 className="text-3xl lg:text-7xl font-bold font-cherola text-[#201E1F]">
                     {item.name[i18n.language]}
@@ -159,7 +182,7 @@ const Category = () => {
 
       {currentView === 'categories' && (
         // Categories grid
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-7 lg:gap-10 mt-9 lg:mt-12 w-full container">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-7 lg:gap-10 mt-9 lg:mt-12 w-full container px-4 lg:px-10">
           {categories.map((category, index) => (
             <div
               key={index}

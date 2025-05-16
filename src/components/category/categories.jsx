@@ -264,7 +264,7 @@ const categories = [
           en: "Homemade Salad"
         },
         description: {
-          sq: "Rukolla, sallatë e gjelbër, misër, karrota, speca, tranguj, domatina, parmesan, salc balsamic",
+          sq: "Rukolla, sallatë e gjelbër, misër, karrota, speca, tranguj, domatina, parmesan, salcë balsamic",
           en: "Arugula, green salad, corn, carrots, peppers, cucumbers, cherry tomatoes, parmesan, balsamic sauce"
         },
         price: {
@@ -635,7 +635,7 @@ const categories = [
           en: "Shrimp Tempura"
         },
         description: {
-          sq: "Shoaërohen me majonez pikant",
+          sq: "Shoqërohen me majonez pikant",
           en: "Served with spicy mayonnaise"
         },
         price: {
@@ -691,8 +691,8 @@ const categories = [
           en: "Philadelphia Roll"
         },
         description: {
-          sq: "Salmon, krem djathi dhe avocado të shoqëruara me soy sauce",
-          en: "Salmon, cream cheese and avocado served with soy sauce"
+          sq: "Salmon, krem djathi dhe avocado të shoqëruara me sos sauce",
+          en: "Salmon, cream cheese and avocado served with sos sauce"
         },
         price: {
           sq: "11.99€",
@@ -705,8 +705,8 @@ const categories = [
           en: "Philadelphia Roll Sake Teriyaki"
         },
         description: {
-          sq: "Salmon, krem djathi dhe avocado të shoqëruara me soy sauce",
-          en: "Salmon, cream cheese and avocado served with soy sauce"
+          sq: "Salmon, krem djathi dhe avocado të shoqëruara me sos sauce",
+          en: "Salmon, cream cheese and avocado served with sos sauce"
         },
         price: {
           sq: "11.99€",
@@ -719,8 +719,8 @@ const categories = [
           en: "Shrimp Tempura Roll"
         },
         description: {
-          sq: "Karkalec, tranguj, krem djathi të shoqëruara me soy sauce",
-          en: "Shrimp, cucumber, cream cheese served with soy sauce"
+          sq: "Karkalec, tranguj, krem djathi të shoqëruara me sos sauce",
+          en: "Shrimp, cucumber, cream cheese served with sos sauce"
         },
         price: {
           sq: "12.99€",
@@ -733,8 +733,8 @@ const categories = [
           en: "Salmon Tempura Roll"
         },
         description: {
-          sq: "Salmon, tranguj, krem djathi të shoqëruara me soy sauce",
-          en: "Salmon, cucumber, cream cheese served with soy sauce"
+          sq: "Salmon, tranguj, krem djathi të shoqëruara me sos sauce",
+          en: "Salmon, cucumber, cream cheese served with sos sauce"
         },
         price: {
           sq: "12.99€",
@@ -747,8 +747,8 @@ const categories = [
           en: "Chicken Tempura Roll"
         },
         description: {
-          sq: "Mish pule, tranguj, krem djathi të shoqëruara me soy sauce",
-          en: "Chicken, cucumber, cream cheese served with soy sauce"
+          sq: "Mish pule, tranguj, krem djathi të shoqëruara me sos sauce",
+          en: "Chicken, cucumber, cream cheese served with sos sauce"
         },
         price: {
           sq: "9.99€",
@@ -761,8 +761,8 @@ const categories = [
           en: "Avocado Maki Roll"
         },
         description: {
-          sq: "Avokado, krem djathi të shoqëruara me soy sauce",
-          en: "Avocado, cream cheese served with soy sauce"
+          sq: "Avokado, krem djathi të shoqëruara me sos sauce",
+          en: "Avocado, cream cheese served with sos sauce"
         },
         price: {
           sq: "8.49€",
@@ -775,8 +775,8 @@ const categories = [
           en: "Cucumber Maki Roll"
         },
         description: {
-          sq: "Tranguj, krem djathi të shoqëruara me soy sauce",
-          en: "Cucumber, cream cheese served with soy sauce"
+          sq: "Tranguj, krem djathi të shoqëruara me sos sauce",
+          en: "Cucumber, cream cheese served with sos sauce"
         },
         price: {
           sq: "8.49€",
@@ -810,11 +810,11 @@ const categories = [
     subcategories: [
       {
         name: {
-          sq: "Pizza Shtêpie",
+          sq: "Pizza Shtëpie",
           en: "House Pizza"
         },
         description: {
-          sq: "Kaqkavall, salcê damatesh, kepurdha, përshutê, suxhuk",
+          sq: "Kaqkavall, salcë damatesh, kepurdha, përshutê, suxhuk",
           en: "Kashkaval cheese, tomato sauce, mushrooms, prosciutto, sujuk"
         },
         price: {
@@ -828,7 +828,7 @@ const categories = [
           en: "Regina Pizza"
         },
         description: {
-          sq: "Kaqkavall, salcê damatesh, kêpurdha, përshutê",
+          sq: "Kaqkavall, salcë damatesh, kêpurdha, përshutê",
           en: "Kashkaval cheese, tomato sauce, mushrooms, prosciutto"
         },
         price: {
@@ -838,11 +838,11 @@ const categories = [
       },
       {
         name: {
-          sq: "Pizza Proshutê",
+          sq: "Pizza Proshutë",
           en: "Prosciutto Pizza"
         },
         description: {
-          sq: "Kaqkavall, salcê damatesh, përshutê",
+          sq: "Kaqkavall, salcë damatesh, përshutê",
           en: "Kashkaval cheese, tomato sauce, prosciutto"
         },
         price: {
@@ -856,7 +856,7 @@ const categories = [
           en: "Margherita Pizza"
         },
         description: {
-          sq: "Kaqkavall, salcê damatesh",
+          sq: "Kaqkavall, salcë damatesh",
           en: "Kashkaval cheese, tomato sauce"
         },
         price: {
@@ -870,7 +870,7 @@ const categories = [
           en: "Vegetarian Pizza"
         },
         description: {
-          sq: "Kaqkavall, salcê damatesh, perime",
+          sq: "Kaqkavall, salcë damatesh, perime",
           en: "Kashkaval cheese, tomato sauce, vegetables"
         },
         price: {
@@ -884,7 +884,7 @@ const categories = [
           en: "Tuna Pizza"
         },
         description: {
-          sq: "Kaqkavall, salcê damatesh, peshk tuna, qepê",
+          sq: "Kaqkavall, salcë damatesh, peshk tuna, qepê",
           en: "Kashkaval cheese, tomato sauce, tuna fish, onions"
         },
         price: {
@@ -898,7 +898,7 @@ const categories = [
           en: "Parma-Rucola Pizza"
         },
         description: {
-          sq: "Proshutê, salcê damatesh, kaqkavall, rukolla, domatina, parmezan",
+          sq: "Proshutê, salcë damatesh, kaqkavall, rukolla, domatina, parmezan",
           en: "Prosciutto, tomato sauce, kashkaval cheese, arugula, cherry tomatoes, parmesan"
         },
         price: {
@@ -912,7 +912,7 @@ const categories = [
           en: "Mushroom Pizza"
         },
         description: {
-          sq: "Kaqkavall, salcê domotesh, kêpurdha",
+          sq: "Kaqkavall, salcë domotesh, kêpurdha",
           en: "Kashkaval cheese, tomato sauce, mushrooms"
         },
         price: {
@@ -1057,7 +1057,7 @@ const categories = [
           en: "Specialty for two persons"
         },
         description: {
-          sq: "Mish ne shitæ, medajon, mish furæ, benxolle pule, oriz, perime, pomitri",
+          sq: "Mish ne shitæ, medajon, mish furre, benxolle pule, oriz, perime, pomitri",
           en: "Veal meat, beef medallion, pork meat, chicken breast, rice, vegetables, potatoes"
         },
         price: {
@@ -1221,7 +1221,7 @@ const categories = [
       },
       {
         name: {
-          sq: "Medajon Me Salcē kēpurdhash",
+          sq: "Medajon Me Salcë kēpurdhash",
           en: "Medallion with Mushroom Sauce"
         },
         description: {
@@ -1253,7 +1253,7 @@ const categories = [
           en: "Skewered Meat"
         },
         description: {
-          sq: "Perime tē ferguora, oriz",
+          sq: "Perime tē ferguara, oriz",
           en: "Fried vegetables, rice"
         },
         price: {
@@ -1267,7 +1267,7 @@ const categories = [
           en: "Mixed Meat"
         },
         description: {
-          sq: "Mish pule, mish vīgī, mish furæ, mish nē fel, Perime tē ferguora, oriz",
+          sq: "Mish pule, mish viqi, mish furre, mish në fel, Perime tē ferguara, oriz",
           en: "Chicken, veal, pork, lamb, Fried vegetables, rice"
         },
         price: {
@@ -1277,11 +1277,11 @@ const categories = [
       },
       {
         name: {
-          sq: "Mish vīgī i flakssur",
+          sq: "Mish viqi i flakosur",
           en: "Grilled Veal"
         },
         description: {
-          sq: "Karrot, spec i kuq, spec i gleibert, kerpurdha",
+          sq: "Karrot, spec i kuq, spec i gjelbërt, kerpurdha",
           en: "Carrot, red pepper, green pepper, mushrooms"
         },
         price: {
@@ -1291,11 +1291,11 @@ const categories = [
       },
       {
         name: {
-          sq: "Mish pule i flakssur",
+          sq: "Mish pule i flakosur",
           en: "Grilled Chicken"
         },
         description: {
-          sq: "Karrot, spec i kuq, spec i gleibert, kerpurdha",
+          sq: "Karrot, spec i kuq, spec i gjelbërt, kerpurdha",
           en: "Carrot, red pepper, green pepper, mushrooms"
         },
         price: {
@@ -1309,7 +1309,7 @@ const categories = [
           en: "Chicken Fillet"
         },
         description: {
-          sq: "Perime tē ferguora, oriz",
+          sq: "Perime tē ferguara, oriz",
           en: "Fried vegetables, rice"
         },
         price: {
@@ -1323,7 +1323,7 @@ const categories = [
           en: "Chicken Cordon Bleu"
         },
         description: {
-          sq: "Kaqkavall, penhule, perime, oriz, salcē kēpurdhash",
+          sq: "Kaqkavall, penhule, perime, oriz, salcë kēpurdhash",
           en: "Kashkaval cheese, ham, vegetables, rice, mushroom sauce"
         },
         price: {
@@ -1337,7 +1337,7 @@ const categories = [
           en: "Skanderbeg"
         },
         description: {
-          sq: "Perime tē ferguora, oriz, kaqkavall, djalhe, sos tartar",
+          sq: "Perime tē ferguara, oriz, kaqkavall, djalhe, sos tartar",
           en: "Fried vegetables, rice, kashkaval cheese, garlic, tartar sauce"
         },
         price: {
@@ -1347,7 +1347,7 @@ const categories = [
       },
       {
         name: {
-          sq: "Pleskovicē",
+          sq: "Pleskavicē",
           en: "Pljeskavica"
         },
         description: {
@@ -1361,7 +1361,7 @@ const categories = [
       },
       {
         name: {
-          sq: "Pleskovicē Shiēpie",
+          sq: "Pleskavicē Shtëpie",
           en: "House Pljeskavica"
         },
         description: {
@@ -1375,11 +1375,11 @@ const categories = [
       },
       {
         name: {
-          sq: "Pleskovicē e mbushur",
+          sq: "Pleskavicë e mbushur",
           en: "Stuffed Pljeskavica"
         },
         description: {
-          sq: "Perime tē ferguora, oriz, djalhe",
+          sq: "Perime tē ferguara, oriz, djalhe",
           en: "Fried vegetables, rice, garlic"
         },
         price: {
@@ -1393,7 +1393,7 @@ const categories = [
           en: "Viennese Chicken Fillet"
         },
         description: {
-          sq: "Perime tē ferguora, oriz, limon, salcē tartar",
+          sq: "Perime të ferguara, oriz, limon, salcë tartar",
           en: "Fried vegetables, rice, lemon, tartar sauce"
         },
         price: {
@@ -1419,7 +1419,7 @@ const categories = [
           en: "Veal Roast"
         },
         description: {
-          sq: "Perime tê férguara, oriz",
+          sq: "Perime tê fërguara, oriz",
           en: "Fried vegetables, rice"
         },
         price: {

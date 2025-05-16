@@ -1550,8 +1550,8 @@ const categories = [
       // Add the new Fresh Juices/Cocktails subcategory
       {
         name: {
-          sq: "Lëngje të freskëta/Koktej",
-          en: "Fresh Juices/Cocktails"
+          sq: "Lëngje të freskëta Koktej",
+          en: "Fresh Juices Cocktails"
         },
         items: [
           {

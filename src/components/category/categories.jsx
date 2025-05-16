@@ -1433,7 +1433,7 @@ const categories = [
           en: "Veal Muscles"
         },
         description: {
-          sq: "Perime tê férguara, oriz",
+          sq: "Perime të fërguara, oriz",
           en: "Fried vegetables, rice"
         },
         price: {
@@ -1447,7 +1447,7 @@ const categories = [
           en: "Veal Roast in Pan"
         },
         description: {
-          sq: "Perime tê férguara, oriz, kaqkavall",
+          sq: "Perime të fërguara, oriz, kaqkavall",
           en: "Fried vegetables, rice, kashkaval cheese"
         },
         price: {
@@ -1461,7 +1461,7 @@ const categories = [
           en: "Veal Muscles in Pan"
         },
         description: {
-          sq: "Perime tê férguara, oriz, kaqkavall",
+          sq: "Perime të fërguara, oriz, kaqkavall",
           en: "Fried vegetables, rice, kashkaval cheese"
         },
         price: {
@@ -1475,7 +1475,7 @@ const categories = [
           en: "Pan for Two Persons"
         },
         description: {
-          sq: "Kotlet, mish furre, biftek, Perime tê férguara, oriz",
+          sq: "Kotlet, mish furre, biftek, Perime të fërguara, oriz",
           en: "Cutlets, pork meat, steak, fried vegetables, rice"
         },
         price: {
@@ -1489,7 +1489,7 @@ const categories = [
           en: "Veal Ribs"
         },
         description: {
-          sq: "Perime tê férguara, dhe pure patatesh",
+          sq: "Perime të fërguara, dhe pure patatesh",
           en: "Fried vegetables, and mashed potatoes"
         },
         price: {
@@ -1587,7 +1587,7 @@ const categories = [
             price: { sq: "150.00€", en: "150.00€" }
           },
           {
-            name: { sq: "Moët Chandon Ros", en: "Moët Chandon Rosé" },
+            name: { sq: "Moët Chandon Ros", en: "Moët Chandon Rose" },
             price: { sq: "170.00€", en: "170.00€" }
           },
           {
@@ -1611,7 +1611,7 @@ const categories = [
         },
         items: [
           {
-            name: { sq: "Birré e Peiès", en: "Birré e Peiès" },
+            name: { sq: "Birrë e Pejës", en: "Beer Peja" },
             price: { sq: "2.50€", en: "2.50€" }
           },
           {
@@ -1651,7 +1651,7 @@ const categories = [
             price: { sq: "3.50€", en: "3.50€" }
           },
           {
-            name: { sq: "Raki Fioni", en: "Raki Fioni" },
+            name: { sq: "Raki Ftoni", en: "Raki Ftoni" },
             price: { sq: "3.50€", en: "3.50€" }
           },
           {
@@ -1659,11 +1659,11 @@ const categories = [
             price: { sq: "3.00€", en: "3.00€" }
           },
           {
-            name: { sq: "Raki Shtèpie", en: "Raki Shtèpie" },
+            name: { sq: "Raki Shtëpie", en: "Raki Shtèpie" },
             price: { sq: "3.00€", en: "3.00€" }
           },
           {
-            name: { sq: "Raki e Kumbullès", en: "Raki e Kumbullès" },
+            name: { sq: "Raki e Kumbullës", en: "Raki e Kumbullès" },
             price: { sq: "3.00€", en: "3.00€" }
           },
           {
@@ -2023,7 +2023,7 @@ const categories = [
       },
       {
         name: {
-          sq: "Tortë me mjedër dhe fēsték",
+          sq: "Tortë me mjedër dhe fëstëk",
           en: "Raspberry & Pistachio cake"
         },
         description: null,
@@ -2045,8 +2045,8 @@ const categories = [
       },
       {
         name: {
-          sq: "Trilège",
-          en: "Trilèce"
+          sq: "Trileqe",
+          en: "Trilece"
         },
         description: null,
         price: {
